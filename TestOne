@@ -1,0 +1,99 @@
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Button, TextInput } from 'react-native';
+
+class Menu2 extends Component {
+
+    render() {
+        return (
+
+            <View style={styles.container}>
+
+                <View style={styles.container2}>
+
+                    <View style={{ flex: 0.2 }}>
+
+                        <TouchableOpacity style={{ flex: 1 }}>
+
+                            <Image style={{ width: '100%', height: '40%', resizeMode: 'contain', marginTop: 20 }}
+                                source={require('../pics/left.png')}>
+
+                            </Image>
+
+                        </TouchableOpacity>
+
+                    </View>
+
+                    <View style={{ flex: 0.6 }}>
+
+                        <Text style={{
+                            fontSize: 25, color: 'white', alignSelf: 'center',
+                            fontWeight: 'bold', marginTop: 15
+                        }}> LOGO </Text>
+
+                    </View>
+
+                    <View style={{ flex: 0.2 }}>
+
+                        <TouchableOpacity style={{ flex: 1 }}>
+
+                            <Image style={{ width: '100%', height: '40%', resizeMode: 'contain', marginTop: 20 }}
+                                source={require('../pics/list.png')}>
+
+                            </Image>
+
+                        </TouchableOpacity>
+
+                    </View>
+
+                </View >
+
+                <View style={styles.container3}>
+
+                    <TextInput style={{
+                        height: 55, width: 330, backgroundColor: 'white',
+                        alignSelf: 'center', marginTop: 20, borderRadius: 30,
+                        paddingLeft: 20,
+                    }}>
+                    </TextInput>
+
+                    <TouchableOpacity style={{
+                        height: 60, width: 200, backgroundColor: '#d50320',
+                        marginTop: 465, borderRadius: 50, alignSelf: 'center'
+                    }}>
+
+                        <Text style={{ fontSize: 22, color: 'white', alignSelf: 'center', marginTop: 15 }}>
+
+                            POST YOUR AD
+
+                        </Text>
+
+                    </TouchableOpacity>
+                </View >
+
+            </View >
+
+
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+
+    container: {
+        flex: 1
+    },
+
+    container2: {
+        flex: 0.09,
+        backgroundColor: '#d50320',
+        flexDirection: 'row'
+    },
+
+    container3: {
+        flex: 0.91,
+        backgroundColor: '#d8d8d8'
+    }
+
+});
+
+export default Menu2;
